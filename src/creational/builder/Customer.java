@@ -1,12 +1,20 @@
 package creational.builder;
 
 public class Customer {
-    private String name;
-    private String address;
+    private final String name;
+    private final String address;
 
     public Customer(String name, String address) {
         this.name = name;
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 
     public static class CustomerBuilder {

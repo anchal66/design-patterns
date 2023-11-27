@@ -1,8 +1,11 @@
 package creational.builder;
 
 public class Main {
-    Customer customer = new Customer.CustomerBuilder()
-            .setName("John Doe")
-            .setAddress("123 Main St")
-            .build();
+    public static void main(String[] args) {
+        Customer customer = new Customer.CustomerBuilder()
+                .setName("Avinash")
+                .setAddress("Pata nai")
+                .build();
+        System.out.println(customer);
+    }
 }
